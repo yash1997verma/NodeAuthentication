@@ -34,9 +34,8 @@ app.set('views', './views');
 //using mongo store to store session cookie in the DB
 app.use(session({
     name: 'NodeJsAuth',
-    //to do, shift this to .env and change key
     secret: process.env.SECRET_KEY,
-    saveUninitialized: false,//when the use is not logged in dont save data
+    saveUninitialized: false,//when the user is not logged in dont save data
     resave: false,//when the cookie already exist, no resave
     cookie: {
         maxAge: (1000*60*100)
