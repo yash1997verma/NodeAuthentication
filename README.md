@@ -1,7 +1,9 @@
 Node Authentication Project
+
 This is a Node.js authentication project that provides Sign In and Sign Up functionalities using Passport Local Strategy for local authentication and Google OAuth using Passport for third-party authentication.
 
 Features
+
 •	Sign In with local email and password
 •	Sign Up with local email and password
 •	Sign In with Google account
@@ -29,6 +31,7 @@ npm start
 The application will start on http://localhost:8000.
 
 Usage
+
 •	Visit http://localhost:3000 in your web browser.
 •	Click on "Sign Up" to create a new account using your email and password.
 •	Click on "Sign In" to log in with your email and password.
