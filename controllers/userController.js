@@ -71,7 +71,6 @@ module.exports.resetPasswordPage= async (req,res)=>{
     }
     let user= await User.findById(req.user.id);
     //if user is google register user they can not change password
-    console.log(user);
     if(user.isGoogle){
         console.log(user.isGoogle)
         req.flash('error',"Google Users can not reset password");
